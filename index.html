@@ -1,0 +1,123 @@
+
+<!--           ,     ,_
+           |`\    `;;,            ,;;' 
+           |  `\    \ '.        .'.'
+           |    `\   \  '-""""-' /
+           `.     `\ /          |`
+             `>    /;   _     _ \ 
+              /   / |       .    ;
+             <  (`";\ ()   ~~~  (/_
+              ';;\  `,     __ _.-'` )
+                >;\          `   _.'
+                `;;\          \-'
+                  ;/           \ _
+                  |   ,"".     .` \
+                  |      _|   '   /
+                   ;    /")     .;-,
+                    \    /  __   .-'
+                     \,_/-"`  `-'
+(с) Vanya Samoylov
+Telegram: ecoder
+Web: evilcoder.ru
+-->
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Пятнашки</title>
+	<style type="text/css">
+	  body {
+		zoom: 0.95;
+		-moz-transform:scale(0.75);
+		-moz-transform-origin: 0 0;
+		-o-transform: scale(0.75);
+		-o-transform-origin: 0 0;
+		-webkit-transform: scale(0.75);
+		-webkit-transform-origin: 0 0;
+	  }
+	  #ex_content {
+	    position:relative; 
+		margin: 0 10px;
+		float: left; 
+		width:      203px;
+	  }
+	  #example {
+		height:     200px;
+		width:      200px;
+		background: url(2.jpg);
+		background-size: 100%;
+		border:     1px solid #545454;
+	  }
+	  
+	  table {
+		border-collapse: collapse;
+		float: left;
+	  }
+	  
+	  td {
+		position:relative;
+		cursor:     pointer;
+		text-align: center;
+		border:     1px solid #545454;
+		height:     100px;
+		width:      100px;
+      }
+	  
+	  td div{
+	    position:relative;
+		height:     100px;
+		width:      100px;
+		background: url(2.jpg);
+	  }
+	  
+	  td div:hover{
+	     box-shadow: 0 0 15px black inset;
+	     transition: all 0.5s ease-in-out;
+         -webkit-transition: all 0.5s ease-in-out; 
+         -moz-transition: all 0.5s ease-in-out;
+         -o-transition: all 0.5s ease-in-out;
+	  }
+
+	</style>
+  </head>
+  <body>
+    <table>
+	  <tr>
+	    <td id='c0' onclick='move(this)'><div style='background-position: 0 0'></div></td>
+		<td id='c1' onclick='move(this)'><div style='background-position: -100px 0'></div></td>
+		<td id='c2' onclick='move(this)'><div style='background-position: -200px 0'></div></td>
+		<td id='c3' onclick='move(this)'><div style='background-position: -300px 0'></div></td>
+	  </tr>
+	  
+	  <tr>
+		<td id='c4' onclick='move(this)'><div style='background-position: 0 -100px'></div></td>
+		<td id='c5' onclick='move(this)'><div style='background-position: -100px -100px'></div></td>
+		<td id='c6' onclick='move(this)'><div style='background-position: -200px -100px'></div></td>
+		<td id='c7' onclick='move(this)'><div style='background-position: -300px -100px'></div></td>
+	  </tr>
+	  
+	  <tr>
+		<td id='c8' onclick='move(this)'><div style='background-position: 0 -200px'></div></td>
+		<td id='c9' onclick='move(this)'><div style='background-position: -100px -200px'></div></td>
+		<td id='c10' onclick='move(this)'><div style='background-position: -200px -200px'></div></td>
+		<td id='c11' onclick='move(this)'><div style='background-position: -300px -200px'></div></td>
+	  </tr>
+	 
+	  <tr>
+		<td id='c12' onclick='move(this)'><div style='background-position: 0 -300px'></div></td>
+		<td id='c13' onclick='move(this)'><div style='background-position: -100px -300px'></div></td>
+		<td id='c14' onclick='move(this)'><div style='background-position: -200px -300px'></div></td>
+		<td id='c15' onclick='move(this)'><div style='background: white'></div></td>
+	  </tr>
+	</table>
+	<div id="ex_content">
+		<div id='example'></div>
+		<div>
+			<p>Moves: <span id='steps'>0</span></p>
+			<p>To start a new game, refresh the page.</p>
+		</div>
+	</div>
+  </body>
+
+</html>
